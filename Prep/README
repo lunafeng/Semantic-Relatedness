@@ -1,0 +1,9 @@
+1.  Run import.py to import searched tweets into Tweets mysql
+2.  Run getWords.py to tokenize words and store in Words mysql
+3.  Run WordsSplitterParallel.py to split tweets and store results in TweetsWords mysql
+4.  Call stored procedure CooccurrencesAll to get cooccurrences
+5.  Run Refine.sql to refine freuency
+6.  Run CooccurrencesNumber.sql to create CooccurrencesMerged table (run twice, change the order of word1, word2)
+7.  remove "rt", "go", "like", "one", "thi", "im", "get", "hi", "ha", "els" from CooccurrencesMerged by remove.py
+8.  Run TotalOccurrences.sql to create TotalOccurrencesAll table
+9.  Run CreateMatrixCP.sql to create matrix
